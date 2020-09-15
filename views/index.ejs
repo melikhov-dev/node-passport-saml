@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if (!hasAuth) { %>
+      <h1>Hello!</h1>
+      <a href="/user/login/sso">Login</a>
+    <% } else { %>
+      <h1>Hello, <%=name%>!</h1>
+    <a href="/user/logout">Logout</a>
+    <% } %>
+  </body>
+</html>
